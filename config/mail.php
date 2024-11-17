@@ -34,8 +34,12 @@ return [
     */
 
     'mailers' => [
+        'resend' => [
+            'transport' => 'resend',
+        ],
+
         'smtp' => [
-            'transport' => 'smtp',
+            'transport' => 'stmp',
             'url' => env('MAIL_URL'),
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
